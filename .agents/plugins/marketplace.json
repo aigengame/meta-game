@@ -1,7 +1,7 @@
 {
   "name": "meta-game-local",
   "interface": {
-    "displayName": "metal-game"
+    "displayName": "Meta Game"
   },
   "plugins": [
     {

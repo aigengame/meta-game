@@ -1,30 +1,32 @@
 ---
 name: create-goal
 
-description: 创建用于 /goal 功能 prompt 的技能. 当用户提出 创建/生成 goal prompt 时触发 
+description: Create a skill for the /goal feature prompt. Triggered when the user requests to create or generate a goal prompt.
 
 ---
 
-当前技能生成适用于 /goal 功能的提示词.
+使用当前技能生成适用于 `/goal` 功能的提示词.
 
 # 步骤
 
 ## 1. 澄清意图
 - 当用户未给出意图或者你认为用户意图不明时，首先要进行澄清
 - 澄清**关注的是 What**，**不是How**
-- 向用户提出 3 个左右的问题，以明确 方向、目标与范围 ，例如：
+- 向用户提出 4 个左右的问题，以明确 **目标、上下文、范围以及完成条件** ，例如：
   - 想要做什么？达成怎样的目标？
+  - 是否有相关上下文？例如参考文档或文件？
   - 实施范围是怎样的？有没有硬约束或者偏好？
+  - 具有怎样的完成条件？
 
 ## 2. 生成提示词
-- 提示词要适合 /goal 的执行
-- 提示词按照 SMART 原则生成
+- 提示词要适合 `/goal` 的执行
+- 提示词按照 **SMART** 原则生成
   - Specific : 目标必须明确，不能笼统
   - Measurable : 目标必须有数据或指标来衡量是否达成
   - Achievable : 目标应当具有挑战性，但在现有资源和技术能力范围内是可以实现的
   - Relevant : 目标不能偏离方向
   - Time-bound : 目标要有时效性，例如 max turn=10(默认) 
-- 如果 doc/goal 目录下存在过往的 goal 提示词文档，可以检索最近的 3 份作为参考
+- 如果 `doc/goal` 目录下存在过往的 goal 提示词文档，可以检索最近的 3 份作为参考
 
 ## 3. 用户确认
 生成后，呈现提示词给用户确认："以下是生成的提示词，如果同意，将使用 /goal 执行: \n\n <生成的提示词>"
@@ -35,9 +37,9 @@ description: 创建用于 /goal 功能 prompt 的技能. 当用户提出 创建/
   - 如果意图已澄清只是细节的补充：进入**步骤2**修改提示词并给用户确认。
 
 ## 4. 执行
-- 生成的提示词，统一放到 doc/goal 目录下，按照 YYMMDD-<TOPIC>.md 的格式保存
+- 生成的提示词，统一放到 `doc/goal` 目录下，按照 `YYMMDD-<TOPIC>.md` 的格式保存
 - 使用 git 提交 ，并注明背景信息，供后续参考
-- 通过 /goal <生成的提示词> 执行
+- 通过 `/goal <生成的提示词>` 执行
 
 
 # 异常情况
