@@ -1,0 +1,20 @@
+{
+  "name": "meta-game",
+  "version": "0.1.0",
+  "description": "Meta Game plugin",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Meta Game",
+    "shortDescription": "Use Meta Game in Codex.",
+    "longDescription": "Meta Game adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Meta Game."
+  },
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json"
+}
