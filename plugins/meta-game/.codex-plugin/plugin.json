@@ -1,20 +1,26 @@
 {
   "name": "meta-game",
-  "version": "0.1.0+codex.20260602135046",
-  "description": "Meta Game plugin",
+  "version": "0.1.0+codex.20260603014528",
+  "description": "Bundle Agentic Workflow for 2D Game Dev.",
   "author": {
-    "name": "Local developer"
+    "name": "AIGenGame",
+    "email": "haihongqin@gmail.com"
   },
+  "repository": "",
+  "licencse": "MIT",
+  "keywords": ["game dev","agentic workflow"],
   "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json",
+  "hooks": "./hooks/hooks.json",
   "interface": {
     "displayName": "Meta Game",
-    "shortDescription": "Use Meta Game in Codex.",
-    "longDescription": "Meta Game adds a local Codex plugin scaffold.",
-    "developerName": "Local developer",
+    "shortDescription": "Create 2D game.",
+    "longDescription": "An Agentic 2D Game Maker Bundle.",
+    "developerName": "AIGenGame",
     "category": "Productivity",
-    "capabilities": [],
-    "defaultPrompt": "Help me use Meta Game."
-  },
-  "mcpServers": "./.mcp.json",
-  "apps": "./.app.json"
+    "capabilities": ["Read","Write"],
+    "defaultPrompt": 
+    ["Use Meta Game to create 2D game."]
+  }
 }

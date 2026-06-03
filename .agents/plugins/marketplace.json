@@ -1,7 +1,7 @@
 {
-  "name": "meta-game-local",
+  "name": "aigengame-curated",
   "interface": {
-    "displayName": "Meta Game"
+    "displayName": "AIGenGame"
   },
   "plugins": [
     {
@@ -9,6 +9,20 @@
       "source": {
         "source": "local",
         "path": "./plugins/meta-game"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "remote-meta-game",
+      "source": {
+        "source": "git-subdir",
+        "url": "",
+        "path": "./plugins/meta-game",
+        "ref": "main"
       },
       "policy": {
         "installation": "AVAILABLE",
