@@ -20,7 +20,7 @@
       "name": "remote-meta-game",
       "source": {
         "source": "git-subdir",
-        "url": "",
+        "url": "https://github.com/aigengame/meta-game.git",
         "path": "./plugins/meta-game",
         "ref": "main"
       },
