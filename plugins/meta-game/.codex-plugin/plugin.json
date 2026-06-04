@@ -1,6 +1,6 @@
 {
   "name": "meta-game",
-  "version": "0.1.0+codex.20260603014528",
+  "version": "0.1.0+codex.20260603095038",
   "description": "Bundle Agentic Workflow for 2D Game Dev.",
   "author": {
     "name": "AIGenGame",
@@ -8,7 +8,10 @@
   },
   "repository": "https://github.com/aigengame/meta-game",
   "licencse": "MIT",
-  "keywords": ["game dev","agentic workflow"],
+  "keywords": [
+    "game dev",
+    "agentic workflow"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "apps": "./.app.json",
@@ -19,8 +22,12 @@
     "longDescription": "An Agentic 2D Game Maker Bundle.",
     "developerName": "AIGenGame",
     "category": "Productivity",
-    "capabilities": ["Read","Write"],
-    "defaultPrompt": 
-    ["Use Meta Game to create 2D game."]
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Meta Game to create 2D game."
+    ]
   }
 }

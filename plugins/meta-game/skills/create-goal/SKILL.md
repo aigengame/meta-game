@@ -11,8 +11,8 @@ description: Create a skill for the /goal feature prompt. Triggered when the use
 
 ## Step 1. 澄清意图
 - 当用户未给出意图或者你认为用户意图不明时，首先要通过问答进行澄清
-- 意图不明不等于意图过大、开放，后者按照下面的 **异常情况处理**
-- 澄清**主要关注的是 What**
+- 意图不明不等于过大或开放的意图，后者按照下面的 **异常情况处理**
+- 澄清**首要关注的是 What**
 - 向用户提出 4 个左右的问题，每次1个，以明确 **目标、上下文、约束以及完成条件** ，例如：
   - 想要做什么？达成怎样的目标？
   - 是否有相关上下文？例如参考文档或文件？
@@ -26,10 +26,10 @@ description: Create a skill for the /goal feature prompt. Triggered when the use
   - Achievable : 目标应当具有挑战性，但在现有资源和技术能力范围内是可以实现的
   - Relevant : 目标不能偏离方向
   - Time-bound : 目标要有时效性，例如 max turn=10(默认) 
-- 如果 `doc/goal` 目录下存在过往的 goal 提示词文档，可以检索最近的 3 份作为参考
+- 如果 `docs/goals` 目录下存在过往的 goal 提示词文档，可以检索最近的 3 份作为参考
 
 ## Step 3. 用户确认
-生成后，呈现提示词给用户确认："以下是生成的提示词，如果同意，将使用 /goal 执行: \n\n <生成的提示词>"
+生成后，呈现提示词给用户确认：```以下是生成的提示词，如果同意，将使用 /goal 执行: \n\n <生成的提示词>```
 如果：
 - 用户认可：进入**Step 4**
 - 用户不认可并给出建议，通过以下迭代步骤进行完善:
@@ -39,8 +39,8 @@ description: Create a skill for the /goal feature prompt. Triggered when the use
    
 
 ## Step 4. 执行
-- 生成的提示词，统一放到 `doc/goal` 目录下，按照 `YYMMDD-<TOPIC>.md` 的格式保存
-- 使用 git 提交 ，并注明背景信息，供后续参考
+- 生成的提示词，统一放到 `docs/goals` 目录下，按照 `YYMMDD-<TOPIC>.md` 的格式保存
+- 使用 git 提交 ，并注明背景信息(git commit -m "doc: goal prompt for <TOPIC>")，供后续参考
 - 通过 `/goal <生成的提示词>` 执行
 
 
