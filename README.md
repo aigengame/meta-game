@@ -23,10 +23,10 @@ Meta Game **is** an Agentic Workflow for 2D Game Dev, including :
 - Phase Driven Game Dev Lifecycle Management
 
 Design philosophy 
-- Create games like a game studio in real world
-- Respect requirement changes, feature rollbakcs, and gradually uncovering the essence along the way, as these situations inevitably arise in any real project process
-- Advocate for the collaboration of HITL rather than complete automation which may be technically correct but practically useless. Human taste feedback and intuitive guidance for game experience are irreplaceable
-- Issue tracker driven dev and feedback management , including issues, GDDs, PRDs and ADRs .
+- **Create games like a game studio in real world**
+- **Respect requirement changes, feature rollbakcs, and gradually uncovering the essence along the way, as these situations inevitably arise in any real project development**
+- **Advocate for the collaboration of HITL rather than complete automation which may be technically correct but practically useless. Human taste feedback and intuitive guidance for game experience are irreplaceable**
+- **Issue tracker driven dev and feedback management , including issues, GDDs, PRDs and ADRs .**
 
 ## Supported Game Type
 
@@ -97,7 +97,7 @@ Use Intergrated Pipeline to design, generate or verify different kinds of digita
 
 ### Workfow : Reusable Game Dev Pattern
 
-- Workflow is a delivery-oriented vertical slice process, and has a control structure that orchestrates : What to do, How to do, When to do, Who will do. 
+- Workflow is a delivery-oriented vertical slice process, and defines: What to do, How to do, When to do, Who will do. 
 - Workflow harness agents to get work done by using Skills and Pipline , but the two are orthogonal in terms of design
 - Workflow follows a stable pattern, can be reused in specific scenario once built.
 - Workflow is composable and can be nested to make complex custom workflow .
@@ -105,10 +105,10 @@ Use Intergrated Pipeline to design, generate or verify different kinds of digita
 
 ### Lifecycle Management
 
-Phase is the base time span of Game Dev lifecycle , it has a feedback loop with :
+Phase is the base time span of game dev lifecycle , it has a feedback loop with :
 - Conditions to break the loop and go on next Phase
 - Workflows in the loop body
-- Deliverables come after every iteration
+- Deliverables and experience come after every iteration
 - HITL to verify and guide
 
 #### Phase 0 : Clarify Intent
@@ -140,7 +140,7 @@ Grill the user to clarify the core concepts of the game , align requirements  be
 - Platform : PC/Mobile/Console/Multi-platform
 
 
-#### Phase 1 : Proof of Core Gameplay (MVP)
+#### Phase 1 : Proof of Core Gameplay
 
 Build a playable MVP to prove whether the core gameplay is fun and feasible.
 
@@ -163,7 +163,7 @@ Freeze all new features and focus on polishing game experience and fixing issuse
 <todo>
 </todo>
 
-#### Pahse 5 : Lauch & Ops
+#### Phase 5 : Lauch & Ops
 
 <todo>
 </todo>
